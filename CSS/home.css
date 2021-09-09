@@ -472,7 +472,8 @@ justify-content: space-between;}
   }
 
   /* Products */
-  .products-container, .popular{padding: 50px 0 63px;}
+  .products-container{padding: 50px 0 69px;}
+  .popular{padding: 34px 0 63px;}
   .products-container>article, .popular>article {margin-bottom: 69px;}
   .products{display: block;}
   .products li{
@@ -512,6 +513,7 @@ justify-content: space-between;}
   .soy-wax a{margin-top: 36px;}
 
   /* Testiomonials */
+  .testimonials{padding: 87px 0 121px;}
   .testimonials .container>ul>li {margin-bottom: 0;margin-right: 23px;}
   .scroll{overflow-x: scroll;}
   .testimonials .scroll>ul{width: 860px;
