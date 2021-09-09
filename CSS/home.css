@@ -395,6 +395,7 @@ justify-content: space-between;}
   nav{
     justify-content: space-around;
     padding: 0;
+    position: relative;
   }
   .actions li:first-child {margin-right: 18px;}
   
@@ -403,7 +404,6 @@ justify-content: space-between;}
   .menu{
     order: -1; 
     margin: 0;
-    position: relative;
   }
     /* Hamburuer Icon */
     .hamburguer{
@@ -411,8 +411,8 @@ justify-content: space-between;}
       width: 32px;
       height: 3px;
       background:#000;
-      position: relative;
       transition: ease .25s all;
+      position: relative;
     }
     .hamburguer::after,
     .hamburguer::before{
@@ -439,8 +439,8 @@ justify-content: space-between;}
       position: absolute; 
       border-top: solid 1px #E5E5E5;
       border-bottom: solid 1px #E5E5E5;
-      bottom: -200px; 
-      left: -25px;
+      top: 70px;
+      left: 0;
       padding: 20px 0 22px 42px;
       background: #fff;
       width: 100vw;
