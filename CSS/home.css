@@ -116,7 +116,7 @@ h2{font: 500 40px 'Poppins', sans-serif;}
 /* Conteúdo*/
 /* Container */
 .container{
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -272,8 +272,9 @@ h1 img{align-items: end;}
   display: flex;
   justify-content:flex-end;
   flex-flow: column wrap;
-  height: 491px;
+  height: 500px;
 }
+.soy-wax h2{color: #1D252C;}
 .soy-wax p{font-weight: 400;}
 .soy-wax strong{font-weight: 500;}
 .soy-wax img{box-shadow: 0 4px 24px rgba(123,123,123,0.15);}
@@ -301,7 +302,7 @@ footer section,
 footer section>ul,
 footer li ul{display: flex;}
 .testimonials,
-.testimonials .scroll .container{
+.testimonials .container{
   align-items:center;
   flex-direction: column;
 }
@@ -315,12 +316,12 @@ footer li ul{display: flex;}
   color:#5E6E89;
   margin-top: 5px;
 }
-.testimonials .scroll>ul{
-  justify-content:space-evenly;
-  width: 100%;
+.scroll>ul{
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1110px;
 }
-.testimonials .scroll>ul>li{
+.scroll>ul>li{
   width: 350px;
   height: 295px;  
   padding: 33px 18px 21px 28px;
@@ -330,20 +331,21 @@ footer li ul{display: flex;}
   text-align: center;
   justify-content: space-around;  
 }
+.scroll>ul>li:nth-child(2){margin: 0 30px;}
 .stars li{margin-right: 5px;}
 .stars li:last-child{margin-right: 0;}
-.testimonials li p:first-of-type{
+.scroll li p:first-of-type{
   font-size: 22px;
   color: #1D252C
 }
-.testimonials li p:last-of-type{
+.scroll li p:last-of-type{
   font: 400 18px Helvetica, Arial, sans-serif;
   color:#7C8087;
 }
 
 /* Popular */
 .popular>article{margin-bottom: 62px;}
-.popular{padding-bottom: 70px;}
+.popular{padding-bottom: 30px;}
 
 /* Footer */
 footer{
@@ -379,9 +381,14 @@ footer li a, footer section>ul>li{
 footer section>ul>li{color: #56B280;}
 
 /* Credits */
-.credits.container{display: flex;
-justify-content: space-between;}
-.credits{background: #fff; padding:26px 0;}
+.credits.container{
+  display: flex;
+  justify-content: space-between;
+}
+.credits{
+  background: #fff; 
+  padding:26px 0;
+}
 .credits p{
   font:400 14px 'Poppins',sans-serif;
   color: #5E6E89;
@@ -390,6 +397,7 @@ justify-content: space-between;}
 
 /* Mobile Styles */
 @media screen and (max-width:991px){
+  /* Container */
   .container{width: 346px;}
   /* Nav */
   nav{
@@ -438,7 +446,7 @@ justify-content: space-between;}
       position: absolute; 
       border-top: solid 1px #E5E5E5;
       border-bottom: solid 1px #E5E5E5;
-      top: 70px;
+      top: 75px;
       left: 0;
       padding: 20px 0 22px 42px;
       background: #fff;
@@ -514,17 +522,24 @@ justify-content: space-between;}
 
   /* Testiomonials */
   .testimonials{padding: 87px 0 121px;}
-  .testimonials .container>ul>li {margin-bottom: 0;margin-right: 23px;}
-  .scroll{overflow-x: scroll;}
-  .testimonials .scroll>ul{width: 860px;
-  justify-content: flex-start;}
+  .testimonials .container>ul>li{
+    margin-bottom: 0;
+    margin-right: 23px;
+  }
+  .scroll{
+    overflow-x: scroll;
+    width: 346px;
+  }
+  .testimonials .scroll>ul{
+    width: 860px;
+    justify-content: flex-start;
+  }
   .testimonials .scroll>ul>li{
     width: 266px;
     height: 224px;  
     padding: 25px 13px 21px 22px; 
-    margin-right: 24px;
   }
-  .testimonials .scroll>ul>li:last-child{margin-right: 0;}
+  .testimonials .scroll>ul>li:nth-child(2){margin: 0 24px;}
   .scroll>ul>li>img{width: 64px;}
   .stars img{
     width: 18px; 
