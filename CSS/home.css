@@ -248,7 +248,7 @@ h1 img{align-items: end;}
     padding: 10px 26px 16px;
     background-color: #fff;
   }
-  .products p{
+  .products h4{
     color: #1D252C; 
     text-align: left;
   }
@@ -256,7 +256,7 @@ h1 img{align-items: end;}
     color:#56B280; 
     font: 500 20px 'Roboto', sans-serif;
   }
-  .products p:last-child{text-align: right;}
+  .products p{text-align: right;}
   .see-more{
     display: none; 
     margin-top: 34px;
